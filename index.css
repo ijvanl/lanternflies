@@ -1,0 +1,58 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero-box {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: black;
+	color: #fff;
+}
+
+.hero {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero img {
+	width: 75vw;
+	max-width: 5in;
+	margin-bottom: 0.5in;
+	pointer-events: none;
+	animation: rock 4s ease 0s infinite alternate;
+}
+
+h1, h2 {
+	margin: 0px 0px;
+	animation: rock 4s ease 0.5s infinite alternate;
+}
+
+h1 {
+	font-size: 20pt;
+}
+h2 {
+	font-size: 18pt;
+}
+
+a {
+	color: #fff;
+}
+
+@keyframes rock {
+	0% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-20px);
+	}
+}
